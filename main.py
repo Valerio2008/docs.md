@@ -1,4 +1,5 @@
 import json
+import pprint
 
 # Load compact data from JSON file
 with open('compact_data.json') as f:
@@ -48,8 +49,11 @@ for category in categories:
             print(f"Attribute: {attribute.name} - {attribute.value}")
         print()
 
-if __name__ == "__main__":
-    compact_data = (Users\root\Downloads\docs.md)
+def generate_slug(name):
+    return ''.join(e for e in name if e.isalnum()).lower()
 
-    products = parse_compact_data(compact_data)
-    print(products)
+data = None
+
+with open('data/compact_data.json', 'docs.md', 'data.py', 'r') as f:
+    data = json.loads(''.json(f.readlines()))
+    pprint(data)
